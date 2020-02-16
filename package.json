@@ -1,0 +1,40 @@
+{
+  "name": "fuzzyset-obj",
+  "version": "1.0.0",
+  "description": "an extension to fuzzyset.js to allow for object searching and other nice extensions",
+  "main": "./dist/index.js",
+  "typings": "./dist/src/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "webpack --config webpack.config.js",
+    "test": "ava-ts src/**/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seiyria/fuzzyset-obj.git"
+  },
+  "keywords": [
+    "fuzzy",
+    "fuzzyset",
+    "fuzzyset.js",
+    "object",
+    "search"
+  ],
+  "author": "Kyle Kemp <kyle@seiyria.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seiyria/fuzzyset-obj/issues"
+  },
+  "homepage": "https://github.com/seiyria/fuzzyset-obj#readme",
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "ava-ts": "^0.24.2",
+    "awesome-typescript-loader": "^3.4.1",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.2",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "fuzzyset.js": "0.0.91"
+  }
+}
